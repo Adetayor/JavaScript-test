@@ -49,3 +49,15 @@ console.log(`David's BMI (${BMIDavid}) is higher than Marcus's (${BMIMarcus})!`)
 }``
 //console.log("David's BMI is higher than Marcus's!");
 //console.log(`David's BMI (27.3) is higher than Marcus's (24.2)!`);
+
+const scoreDolphins = (96 + 108 + 89) / 3;
+const scoreKoalas = (88 + 91 + 110) / 3;
+console.log(scoreDolphins, scoreKoalas);
+
+if (scoreDolphins > scoreKoalas) {
+  console.log('Dolphins wins the Trophy 🏆');
+} else if (scoreKoalas > scoreDolphins) {
+  console.log('Koalas wins the Trophy 🏆');
+} else if (scoreDolphins === scoreKoalas) {
+  console.log('Both wins the Trophy 🏆');
+}
