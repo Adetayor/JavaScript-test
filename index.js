@@ -61,3 +61,27 @@ if (scoreDolphins > scoreKoalas) {
 } else if (scoreDolphins === scoreKoalas) {
   console.log('Both wins the Trophy 🏆');
 }
+
+const scoreArsernal = (97 + 112 + 101) / 3;
+const scoreMadrid = (109 + 95 + 123) / 3;
+console.log(scoreArsernal, scoreMadrid);
+
+if (scoreArsernal > scoreMadrid) {
+  console.log('Arsernal wins the Trophy 🏆');
+} else if (scoreMadrid > scoreArsernal) {
+  console.log('Madrid wins the Trophy 🏆');
+} else if (scoreArsernal === scoreMadrid) {
+  console.log('Both wins the Trophy 🏆');
+}
+
+const scoreEyimba = (97 + 112 + 101) / 3;
+const scoreOlukoya = (88 + 91 + 110) / 3;
+console.log(scoreEyimba, scoreOlukoya);
+
+if (scoreEyimba > scoreOlukoya) {
+  console.log('Eyimba wins the Trophy 🏆');
+} else if (scoreOlukoya > scoreEyimba) {
+  console.log('Koalas wins the Trophy 🏆');
+} else if (scoreEyimba === scoreOlukoya) {
+  console.log('Both wins the Trophy 🏆');
+}
