@@ -66,7 +66,7 @@ const scoreArsernal = (97 + 112 + 101) / 3;
 const scoreMadrid = (109 + 95 + 123) / 3;
 console.log(scoreArsernal, scoreMadrid);
 
-if (scoreArsernal > scoreMadrid) {
+if (scoreArsernal > scoreMadrid && scoreArsernal == 100) {
   console.log('Arsernal wins the Trophy 🏆');
 } else if (scoreMadrid > scoreArsernal) {
   console.log('Madrid wins the Trophy 🏆');
@@ -75,13 +75,27 @@ if (scoreArsernal > scoreMadrid) {
 }
 
 const scoreEyimba = (97 + 112 + 101) / 3;
-const scoreOlukoya = (88 + 91 + 110) / 3;
+const scoreOlukoya = (109 + 95 + 106) / 3;
 console.log(scoreEyimba, scoreOlukoya);
 
-if (scoreEyimba > scoreOlukoya) {
+if (scoreEyimba > scoreOlukoya && scoreEyimba >= 100) {
   console.log('Eyimba wins the Trophy 🏆');
 } else if (scoreOlukoya > scoreEyimba) {
   console.log('Koalas wins the Trophy 🏆');
 } else if (scoreEyimba === scoreOlukoya) {
   console.log('Both wins the Trophy 🏆');
+}
+
+const scoreAston = (97 + 112 + 81) / 3;
+const scoreJuventus = (109 + 95 + 86) / 3;
+console.log(scoreAston, scoreJuventus);
+
+if (scoreAston > scoreJuventus && scoreAston >= 100) {
+  console.log('Aston Villa wins the Trophy 🏆');
+} else if (scoreJuventus > scoreAston && scoreJuventus >= 100) {
+  console.log('Koalas wins the Trophy 🏆');
+} else if (scoreAston === scoreJuventus && scoreAston >= 100 && scoreJuventus >= 100) {
+  console.log('Both wins the Trophy 🏆');
+} else {
+  console.log('No one wins the trophy 😞');
 }
