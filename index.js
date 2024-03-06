@@ -99,3 +99,16 @@ if (scoreAston > scoreJuventus && scoreAston >= 100) {
 } else {
   console.log('No one wins the trophy 😞');
 }
+
+
+const bill = 275;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.20;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
+
+const bil = 40;
+const tin = bil <= 300 && bil >= 50 ? bil * 0.15 : bil * 0.20;
+console.log(`The bil was ${bil}, the tip was ${tin}, and the total value ${bil + tin}`);
+
+const bol = 430;
+const tim = bol <= 300 && bol >= 50 ? bol * 0.15 : bol * 0.20;
+console.log(`The bol was ${bol}, the tip was ${tim}, and the total value ${bol + tim}`);
