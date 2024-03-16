@@ -1,3 +1,4 @@
+/*
 let country = "Minnesota";
 const continent = "North America";
 let population = "3,490,621";
@@ -112,3 +113,27 @@ console.log(`The bil was ${bil}, the tip was ${tin}, and the total value ${bil +
 const bol = 430;
 const tim = bol <= 300 && bol >= 50 ? bol * 0.15 : bol * 0.20;
 console.log(`The bol was ${bol}, the tip was ${tim}, and the total value ${bol + tim}`);
+*/
+
+const calcAverage = (a, b, c) => (a, b, c) / 3;
+console.log(calcAverage(3, 4, 5));
+
+// Test 1
+const scoreDolphins = calcAverage(44, 23, 71);
+const scoreKoalas = calcAverage(65, 54, 49);
+console.log(scoreDolphins, scoreKoalas);
+
+const checkWinner = function(avgDolphins, avgKoalas) {
+  if (avgDolphins >= 2 * avgKoalas) {
+    console.log(`Dolphins wins 🏆 (${avgDolphins} vs. ${avgKoalas})`);
+  } else if (avgKoalas >= 2 * avgDolphins) {
+    console.log(`koalas wins 🏆 (${avgKoalas} vs. ${avgDolphins})`);
+  } else {
+    console.log('No Team Wins...');
+  }
+}
+checkWinner(scoreDolphins, scoreKoalas);
+
+checkWinner(576, 111);
+
+// Test 2
