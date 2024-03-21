@@ -107,13 +107,13 @@ const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.20;
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
 
 const bil = 40;
-const tin = bil <= 300 && bil >= 50 ? bil * 0.15 : bil * 0.20;
+const tin = bil <= 300 && bil >= 50 ? bil * 0.15 : bil * 0.2;
 console.log(`The bil was ${bil}, the tip was ${tin}, and the total value ${bil + tin}`);
 
 const bol = 430;
 const tim = bol <= 300 && bol >= 50 ? bol * 0.15 : bol * 0.20;
 console.log(`The bol was ${bol}, the tip was ${tim}, and the total value ${bol + tim}`);
-*/
+
 
 const calcAverage = (a, b, c) => (a + b + c) / 3;
 console.log(calcAverage(3, 4, 5));
@@ -141,3 +141,17 @@ scoreDolphins = calcAverage(85, 54, 51);
 scoreKoalas = calcAverage(23, 34, 27);
 console.log(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins, scoreKoalas);
+*/
+
+const calcTip = function(bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+//const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+//const totals = bills + tips; //Cannot work becos each of the arrays will be transformed into a string, and the 2 strings will be concantenated
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+console.log(bills, tips, totals);
